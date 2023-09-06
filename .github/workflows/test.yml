@@ -1,0 +1,8 @@
+name: Test
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Context
+        run: echo "${{ secrets }}"
