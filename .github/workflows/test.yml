@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Context
-        run: echo "${{ secrets }}"
+        run: echo "${{ toJSON(secrets) }}"
